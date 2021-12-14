@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+main section {
+  grid-column: 2 / 3;
+}
+#splashbillede {
+  margin-bottom: 10vh;
+}
+.splashbillede {
+  width: 100%;
+  height: auto;
+}
+.tekst_og_video {
+  display: flex;
+}
+
+.tekst_og_video p {
+  margin-right: 2vw;
+  margin-top: 4vh;
+}
+
+.tekst2 {
+  margin-top: 15vh;
+  margin-left: 15vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .tekst_og_video {
+    display: grid;
+  }
+  .tekst2 {
+    margin-top: 15vh;
+    margin-left: 4vw;
+    text-align: center;
+  }
+}
